@@ -18,7 +18,7 @@ The Virtual TryOn Shopping Mall aims to enhance the online shopping experience b
 
 ## Project Structure
 The project includes the following files and directories:
-1. `index.html`: The main HTML file.
+1. `vr.html`: The main HTML file.
 2. `women.html`: The HTML file for the women's section.
 3. `men.html`: The HTML file for the men's section.
 4. `children.html`: The HTML file for the children's section.
