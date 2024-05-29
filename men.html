@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Clothing</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .title-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #b893c3;
+            color: #fff;
+        }
+        h2 {
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+        .product {
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+        }
+        .product img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        .product p {
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        /* Virtual Try-on button styles */
+        .virtual-price {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .virtual-price label {
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .virtual-price label:hover {
+            background-color: #0056b3;
+        }
+        .virtual-price input[type="file"] {
+            display: none;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="title-container">
+        <h2>Men's Clothing</h2>
+    </div>
+
+
+    <div class="product">
+        <img src="https://www.merchantmarine.co.in/cdn/shop/products/7030MTSRAB532M_1_1024x1024.jpg?v=1662545959" alt="Men's Product 1" height="500" width="500">
+        <p>Price: $50</p>
+        <div class="virtual-price">
+           <label for="virtual-price-toggle-1">Virtual Try-on</label>
+            <input type="file" accept="image/*" class="upload-input" id="virtual-price-toggle-1">
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="https://images.meesho.com/images/products/94472183/jz43m_512.webp" alt="Men's Product 2" height="500" width="500">
+        <p>Price: $60</p>
+        <div class="virtual-price">
+            <label for="virtual-price-toggle-1">Virtual Try-on</label>
+            <input type="file" accept="image/*" class="upload-input" id="virtual-price-toggle-1">
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="https://images-cdn.ubuy.co.in/637ec3b56af2800ead4fe525-christmas-men-lace-business-leather.jpg" alt="Men's Product 3" height="500" width="500">
+        <p>Price: $60</p>
+        <div class="virtual-price">
+            <label for="virtual-price-toggle-1">Virtual Try-on</label>
+            <input type="file" accept="image/*" class="upload-input" id="virtual-price-toggle-1">
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="https://ae01.alicdn.com/kf/Sd30d485b6cdd4eaa8b87a48b2554e3215/New-Chinese-Dragon-Designer-Belt-for-Men-Luxury-Cowskin-Leather-Men-Belts-Waistband-High-Quality-Businessmen.jpg" alt="Men's Product 4" height="500" width="500">
+        <p>Price: $60</p>
+        <div class="virtual-price">
+             <label for="virtual-price-toggle-1">Virtual Try-on</label>
+            <input type="file" accept="image/*" class="upload-input" id="virtual-price-toggle-1">
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="https://www.dmsgroup.in/wp-content/uploads/2023/04/MANCREW-Formal-Pants-for-Men-Regular-fit-Formal-Trousers-for-Men.jpg" alt="Men's Product 5" height="500" width="500">
+        <p>Price: $60</p>
+        <div class="virtual-price">
+            <label for="virtual-price-toggle-1">Virtual Try-on</label>
+            <input type="file" accept="image/*" class="upload-input" id="virtual-price-toggle-1">
+        </div>
+    </div>
+
+    <!-- Repeat the above structure for other products -->
+
+    <script>
+        // JavaScript to trigger file input click when the label is clicked
+        const virtualPriceLabels = document.querySelectorAll('.virtual-price label');
+        virtualPriceLabels.forEach(label => {
+            label.addEventListener('click', () => {
+                const inputId = label.getAttribute('for');
+                const inputElement = document.getElementById(inputId);
+                inputElement.click();
+            });
+        });
+    </script>
+ </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Clothing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .title-container {
+            text-align: center;
+            padding: 20px;
+            background-color:#b893c3;
+            color: #fff;
+        }
+        h2 {
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+        .product {
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+        }
+        .product img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        .product p {
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        /* Virtual Try-on button styles */
+        .virtual-price {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .virtual-price label {
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .virtual-price label:hover {
+            background-color: #0056b3;
+        }
+        .virtual-price input[type="file"] {
+            display: none;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <div class="title-container">
+        <h2>Women's Clothing</h2>
+    </div>
+
+
+    <div class="product">
+        <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/22391504/2023/3/17/3259c109-060a-4c39-aba2-e9d32e2068e41679049035856StyleQuotientPeach-ColouredTie-UpNeckPuffSleeveCottonTop1.jpg" alt="women's Product 1" height="500" width="500">
+        <p>Price: $50</p>
+        <div class="virtual-price">
+           <label for="virtual-price-toggle-1">Virtual Try-on</label>
+            <input type="file" accept="image/*" class="upload-input" id="virtual-price-toggle-1">
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/jean/u/x/2/32-straight-grey-jeans-dstn-fashion-original-imagk98dabgfz8r8.jpeg?q=20&crop=false" alt="women's Product 2" height="500" width="500">
+        <p>Price: $60</p>
+        <div class="virtual-price">
+            <label for="virtual-price-toggle-1">Virtual Try-on</label>
+            <input type="file" accept="image/*" class="upload-input" id="virtual-price-toggle-1">
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="https://www.textileinfomedia.com/img/dprf/women-short-dress-full.jpg" alt="women's Product 3" height="500" width="500">
+        <p>Price: $60</p>
+        <div class="virtual-price">
+            <label for="virtual-price-toggle-1">Virtual Try-on</label>
+            <input type="file" accept="image/*" class="upload-input" id="virtual-price-toggle-1">
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="https://ik.imagekit.io/wb2spwtue/kreeva/tr:h-430,w-315,q-80,cm-pad_resize/media/catalog/product/u/n/untitled-1_0011_209e729c-8fcb-4ed9-aa23-5e1692d9f2ec.jpg" alt="women's Product 4" height="500" width="500">
+        <p>Price: $60</p>
+        <div class="virtual-price">
+             <label for="virtual-price-toggle-1">Virtual Try-on</label>
+            <input type="file" accept="image/*" class="upload-input" id="virtual-price-toggle-1">
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="https://image.made-in-china.com/202f0j00PszlJOpaZwgG/Hot-Sale-Small-Bags-Stylish-Elegant-Shoulder-Bag-Ladies-Leather-Handbags-Women-Hand-Bags.webp" alt="woen's Product 5" height="500" width="500">
+        <p>Price: $60</p>
+        <div class="virtual-price">
+            <label for="virtual-price-toggle-1">Virtual Try-on</label>
+            <input type="file" accept="image/*" class="upload-input" id="virtual-price-toggle-1">
+        </div>
+    </div>
+
+
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61zBW4QCnrL._AC_UY1100_.jpg" alt="women's Product 6" height="500" width="500">
+        <p>Price: $60</p>
+        <div class="virtual-price">
+            <label for="virtual-price-toggle-1">Virtual Try-on</label>
+            <input type="file" accept="image/*" class="upload-input" id="virtual-price-toggle-1">
+        </div>
+    </div>
+
+
+
+    <div class="product">
+        <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/c94ae3d95d8d22ce428575901b1f8462.jpg?imageView2/2/w/500/q/60/format/webp" alt="women's Product 7" height="500" width="500">
+        <p>Price: $60</p>
+        <div class="virtual-price">
+            <label for="virtual-price-toggle-1">Virtual Try-on</label>
+            <input type="file" accept="image/*" class="upload-input" id="virtual-price-toggle-1">
+        </div>
+    </div>
+
+    
+    <script>
+        // JavaScript to trigger file input click when the label is clicked
+        const virtualPriceLabels = document.querySelectorAll('.virtual-price label');
+        virtualPriceLabels.forEach(label => {
+            label.addEventListener('click', () => {
+                const inputId = label.getAttribute('for');
+                const inputElement = document.getElementById(inputId);
+                inputElement.click();
+            });
+        });
+    </script>
+
+
+</body>
+</html>
